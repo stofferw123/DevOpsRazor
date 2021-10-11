@@ -1,0 +1,29 @@
+﻿@page
+@model DevOpsRazor.Pages.StudioPages.AllStudiosModel
+@{
+}
+
+<h1>List of events</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>HQCity</th>
+        <th>NoOfEmployees</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Studios)
+    {
+        <tr>
+            <td> @item.Id</td>
+            <td> @item.Name</td>
+            <td> @item.HQCity</td>
+            <td> @item.NoOfEmployees</td>
+        </tr>
+
+    }
+    </tbody>
+</table>
